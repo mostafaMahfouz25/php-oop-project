@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
+	<meta name="description" content="www.RainTPL.com">
+	<title>Rain TPL</title>
+
+	<!-- this link will be substituted with the right path : href="THEMES/acid/style.css" -->
+	<link href="style.css" type="text/css" rel="stylesheet" >
+</head>
+
+<body>
+	<table id="site" cellspacing="0" cellpadding="0">
+		<tr>
+			<!-- this img src will be substituted with the right path : src="THEMES/acid/images.gif" -->			
+			<td id="top"><a href="http://www.raintpl.com"><img src="images/title.gif"></a></td>
+		</tr>
+		<tr>
+			<td id="subtitle" align="right">
+			</td>
+		</tr>
+		<tr>
+			<!-- content -->
+			<td id="center">
+				
+				<table cellspacing="0" cellpadding="0" id="content">
+					<tr>
+						<!-- center content -->						
+						<td id="inner_content">
+						
+							<span class="text_page_title">Template Example</span>
+							<div class="layout">
+							This is a variable <i>{noparse}{$variable}{/noparse}</i>: {$variable}
+							<br>and this is a variabile with function <i>{noparse}{$variable|substr:0,4}{/noparse}</i>: {$variable|substr:0,4}
+							<br><br><br>
+							You can use system variables like:
+							<i>{noparse}{$GLOBALS} - {$_SERVER} - {$_SESSIONS} - {$_COOKIE} - {$_GET} - {$_POST}{/noparse}</i> 
+							<br>For example <i>{noparse}{$_SERVER['DOCUMENT_ROOT']}{/noparse}</i>: {$_SERVER['DOCUMENT_ROOT']}
+							<br>This is a constant example <i>{noparse}{#PHP_CONFIG_FILE_PATH#}{/noparse}</i>: {#PHP_CONFIG_FILE_PATH#}
+							<br><br><br>
+							This is a loop example
+							<br>
+							<table cellspacing="0" cellpadding="10" class="table">
+								<tr>
+							{loop name="week"}
+									<td class="row_{$counter%2+1}">{$value}</td>
+							{/loop}
+								</tr>
+							</table>
+							<br><br>
+							This is another loop example:
+							<br>
+							<table cellspacing="0" cellpadding="10" class="table">
+								<tr>
+									<td></td><td>Nome</td><td>Età</td>
+								</tr>
+							{loop name="user"}
+								<tr><td class="row_{$counter%2+1}">{$key}</td><td class="row_{$counter%2+1}">{$value.name}</td><td class="row_{$counter%2+1}">{$value.age}</tr>
+							{/loop}
+							</table>
+							<br><br>
+							Include file: {include="info"}
+							
+							</div>
+						</td>						
+						<!-- center content -->						
+					</tr>
+				</table>
+				
+			</td>
+			<!-- content -->			
+		</tr>
+		<tr>
+			<td id="bottom" align="center"><p>{$copyright}</p></td>
+		</tr>
+			
+	</table>
+
+</body>
+</html>

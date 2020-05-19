@@ -1,0 +1,278 @@
+/* CSS Document */
+
+html{
+	margin: 0px;
+	border: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	margin: 0px;
+	border: 0px;
+	height: 100%;
+	width: 100%;	
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+table{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+img{
+	border: 0px;
+}
+
+/* link on mouse out */
+a:link, a:visited, a:active {
+	color: #333333;	
+	text-decoration: underline;	
+}
+
+/* link on mouse over */
+a:hover{
+	color: #999999;
+	text-decoration: underline;
+}
+
+
+form{
+	margin:0px;
+}
+
+
+ul{
+	margin-top: 0px;
+}
+
+	
+li{
+	margin-bottom: 5px;
+}
+
+
+/************************************************************
+
+	RainTemplateEngine CSS Id
+
+************************************************************/
+
+
+/* principal table */
+	#site{
+		width: 100%;
+		height: 100%;
+		vertical-align: top;
+	}
+
+
+	#top{
+		background: url( 'images/top.gif' ) repeat-x;
+		height: 77px;
+	}
+
+
+/* Sub title */
+	#subtitle{
+		font-size: 10px;
+		background: url( 'images/subtitle.gif' ) repeat-x;
+		height: 26px;
+		padding-right: 10px;
+		color: #c9ff00;
+	}
+	#subtitle a{
+		font-weight: bold;	
+	}
+	
+	#subtitle a:link, #subtitle a:visited, #subtitle a:active {
+		color: #c9ff00;	
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-decoration: none;	
+	}
+	
+	#subtitle  a:hover{
+		color: #c9ff99;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-decoration: underline;
+	}
+
+/* \Sub title */
+
+
+	#center{
+		height: 100%;
+		width: 100%;
+	}
+
+	/* inner principal table */
+	#content{
+		width: 100%;
+		height: 100%;
+	}
+	
+
+	/* center of the page */
+	#inner_content{
+		height: 100%;
+		padding: 10px;
+		vertical-align: top;
+
+	}
+	
+	
+/* bottom */
+
+	#bottom{
+		background: url( 'images/bottom.gif' ) repeat-x;
+		height: 55px;
+		color: #c9ff00;
+		vertical-align: middle;
+		font-size: 10px;
+	}
+
+	#bottom a:link, #bottom a:visited, #bottom a:active {
+		color: #c9ff00;	
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-decoration: underline;
+	}
+	
+	#bottom a:hover{
+		color: #c9ff99;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		text-decoration: underline;
+	}
+	
+/* \bottom */
+
+
+/* layout table */
+
+	/* example */
+	.layout{
+		background-color: #fafafa;
+		border: 1px solid #cccccc;
+		padding: 15px;
+		font-size: 12px;
+		font-family: monospace;
+	}
+	
+	/* output */
+	.layout2{
+		border: 1px dashed #bbbbbb;
+		padding: 15px;		
+		font-size: 12px;
+		font-family: monospace;
+		
+	}
+
+	.title_layout{
+		font-size: 9px;
+		color: #999999;
+	}
+
+/* table */
+
+	.table{
+		border: 1px solid #999999;
+	}
+
+/* title */
+	.text_page_title{
+		font-size: 20px;
+
+		color: #666666;
+		font-family: "Arial Black", Arial;
+		line-height: 25px;
+	}
+
+
+	.text_title{
+		font-size: 17px;
+		font-family: tahoma, Verdana, arial;
+		font-weight: bold;
+	}
+	
+	.text_step{
+		font-size: 20px;
+		font-family: tahoma, Verdana, arial;
+	}
+
+	.var_icon{
+		list-style: url( images/var_icon.gif );
+	}
+	
+	.img_icon{
+		list-style: url( images/img_icon.gif );
+	}
+	
+	.css_icon{
+		list-style: url( images/css_icon.gif );
+	}
+	
+	.dir_icon{
+		list-style: url( images/dir_icon.gif );
+	}
+
+	.php_icon{
+		list-style: url( images/php_icon.gif );
+	}
+
+	.html_icon{
+		list-style: url( images/html_icon.gif );
+	}
+
+	.comment{
+		color: #aaaaaa;
+	}
+	
+
+
+
+/************************************************************
+
+	Generic CSS Class
+
+************************************************************/
+
+.max_size{
+	width: 100%;
+	height: 100%;
+}
+
+.max_width{
+	width: 100%;
+}
+
+.max_height{
+	height: 100%;
+}
+
+.spacer5{
+	height: 5px;
+	width: 5px;
+}
+
+.spacer10{
+	height: 10px;
+	width: 10px;
+}
+
+.spacer15{
+	height: 15px;
+	width: 15px;
+}
+
+.row_1{
+	background-color:#CCCCCC;
+}
+
+.row_2{
+	background-color:#DDDDDD;
+}
+
